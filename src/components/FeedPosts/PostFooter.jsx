@@ -3,7 +3,7 @@ import { useState } from "react"
 
 import { UnlikeLogo , NotificationsLogo, CommentLogo} from "../../assets/contants";
 
-function PostFooter() {
+function PostFooter({username}) {
 
   const [liked,setLiked] = useState(false);
   const [likes,setLikes] = useState(100);
@@ -20,7 +20,7 @@ function PostFooter() {
 
   return (
     <>
-    <Flex alignItems={"center"} gap={4} w={"full"} pt={0} mb={2} mt={2}>
+    <Flex alignItems={"center"} gap={4} w={"full"} pt={0} mb={2} mt={2} username={username}>
       <Box onClick={handleLike} cursor={"pointer"} fontSize={17}>
         {!liked ? <NotificationsLogo/> : <UnlikeLogo/>}
       </Box>
@@ -32,7 +32,7 @@ function PostFooter() {
       {likes} Likes
     </Text>
     <Text fontSize='sm' fontWeight={700}>
-      swarup__{" "}
+      {username}{" "}
       <Text as='span' fontWeight={400}>
       Lokkin Hot
     </Text>
