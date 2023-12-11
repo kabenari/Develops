@@ -12,7 +12,7 @@ const styles = {
   global:(props)=>({
     body:{
       bg:mode("black","#000")(props),
-      color:mode("gray.800","whiteAlpha.900")(props)
+      color:mode("#000","whiteAlpha.900")(props)
     }
   })
 }
