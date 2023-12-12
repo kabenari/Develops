@@ -5,6 +5,7 @@ import ProfilePost from "../../components/Profile/ProfilePost"
 function ProfilePosts() {
 
   const [isLoading,setIsLoading] = useState(true)
+  
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -19,10 +20,10 @@ function ProfilePosts() {
     gap={1}
     columnGap={1}>
       {isLoading && 
-      [0,1,2,3,4,5].map((_,idx)=>(
+      [0,1,2,3].map((_,idx)=>(
         <VStack key={idx} alignItems={"flex-start"} gap={4}>
           <Skeleton w={"full"}>
-            <Box h="300px" >Contents Wrapped</Box>
+            <Box h="200px" >Contents Wrapped</Box>
           </Skeleton>
         </VStack>
       
@@ -30,10 +31,10 @@ function ProfilePosts() {
 
       {!isLoading && (
         <>
-        <ProfilePost img="public/img1.png"/>
-        <ProfilePost img="public/img1.png"/>
-        <ProfilePost img="public/img1.png"/>
-        <ProfilePost img="public/img1.png"/>
+        <ProfilePost img="public/img1.jpeg"/>
+        <ProfilePost img="public/img5.jpg"/>
+        <ProfilePost img="public/img3.jpg"/>
+        <ProfilePost img="public/img4.png"/>
         </>
       )}
 
