@@ -16,9 +16,9 @@ function SuggestedUsers() {
             </Text>
         </Flex>
 
-        <SuggestedUser name='Dan Abrahmov' followers={1392} avatar='public/img1.png'/>
-        <SuggestedUser name='Dan Abrahmov' followers={1392} avatar='public/img1.png'/>
-        <SuggestedUser name='Dan Abrahmov' followers={1392} avatar='public/img1.png'/>
+        <SuggestedUser name='Ikkutsu' followers={1392} avatar='public/img5.jpg'/>
+        <SuggestedUser name='Dan Abrahmov' followers={1392} avatar='public/img4.png'/>
+        <SuggestedUser name='Sano' followers={1392} avatar='public/img1.png'/>
 
         <Box 
         fontSize={12}
