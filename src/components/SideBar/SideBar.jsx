@@ -46,7 +46,7 @@ const SideBar = () => {
 
       <Flex direction={"column"} gap={10} w='full' height={"full"}>
 				<Link to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "block" }} cursor='pointer'>
-					<InstagramLogo />
+					{/* <InstagramLogo /> */}
 				</Link>
 				<Link
 					to={"/"}
@@ -60,7 +60,7 @@ const SideBar = () => {
 					w={10}
 					cursor='pointer'
 				>
-					<InstagramMobileLogo />
+					{/* <InstagramMobileLogo /> */}
 				</Link>
         <Flex direction={"column"} gap={5} cursor={"pointer"}>
           {Sidebaritems.map((item,index)=>(

@@ -21,10 +21,10 @@ function useSignUpWithEmailAndPassword() {
         }
 
         try {
-            const newUser = await createUserWithEmailAndPassword(inputs.email,inputs,password)
+            const newUser = await createUserWithEmailAndPassword(inputs.email,inputs.password)
             if(!newUser && error){
                 console.log(error);
-                return
+                return;
             }
             if(newUser){
                 const userDoc = {
@@ -40,12 +40,8 @@ function useSignUpWithEmailAndPassword() {
                     createdAt:Date.now()
                 }
                 await setDoc(doc(firestore, "users", newUser.user.uid), userDoc);
-                localStorage.setItem("user-")
-
+                localStorage.setItem("user-info",JSON.stringify(userDoc))
             }
-
-
-
         } catch (error) {
             console.log(error);
         }

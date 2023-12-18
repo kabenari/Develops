@@ -8,9 +8,9 @@ function AuthPage() {
         <Container maxW={"container.md"} padding={0}>
             <Flex justifyContent={"center"} gap={10} alignItems={"center"}>
                             {/* left */}
-            <Box display={{base:"none",md:"block"}}>
+            {/* <Box display={{base:"none",md:"block"}}>
                 <Image src="public\auth.png" h={650} alt={"pic"}/>
-            </Box>
+            </Box> */}
             {/* right */}
             <VStack spacing={4} align={"stretch"}>
                 <AuthForm/>
