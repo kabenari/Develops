@@ -92,6 +92,9 @@ const SideBar = () => {
             </Tooltip>
           ))}
         </Flex>
+
+
+        {/* logout  */}
         <Tooltip
             hasArrow
             label={"Logout"}
@@ -100,10 +103,8 @@ const SideBar = () => {
             openDelay={500}
             display={{ base: "block", md: "none" }}
             >
-              <Link
-              display={"flex"}
-              to={"/auth"}
-              as={RouterLink}
+              <Flex
+              // onClick={handleLogout}
               alignItems={"center"}
               gap={4}
               _hover={{bg:"whiteAlpha.400"}}
@@ -116,7 +117,7 @@ const SideBar = () => {
                 <Box display={{base:"none",md:"block"}}>
                   LogOut
                 </Box>
-              </Link>
+              </Flex>
             </Tooltip>
 		  </Flex>
     </Box>
