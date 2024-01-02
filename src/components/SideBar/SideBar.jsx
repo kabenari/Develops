@@ -1,11 +1,12 @@
 import { Avatar, Box, Button, Flex, Link, Tooltip } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import { CreatePostLogo, InstagramLogo, InstagramMobileLogo, NotificationsLogo, SearchLogo } from "../../assets/contants";
+import { CreatePostLogo, NotificationsLogo, SearchLogo } from "../../assets/contants";
 
 import {AiFillHome} from 'react-icons/ai'
 import {BiLogOut} from 'react-icons/bi'
  
 const SideBar = () => {
+
 
   const Sidebaritems = [
     {
@@ -104,7 +105,6 @@ const SideBar = () => {
             display={{ base: "block", md: "none" }}
             >
               <Flex
-              // onClick={handleLogout}
               alignItems={"center"}
               gap={4}
               _hover={{bg:"whiteAlpha.400"}}
@@ -114,9 +114,11 @@ const SideBar = () => {
               justifyContent={{base:"center",md:"flex-start"}}
               mt={"auto"}>
                 <BiLogOut size={25}/>
-                <Box display={{base:"none",md:"block"}}>
+                <Button display={{base:"none",md:"block"}}
+                variant={"ghost"}
+                _hover={{bg:"transparent"}}>
                   LogOut
-                </Box>
+                </Button>
               </Flex>
             </Tooltip>
 		  </Flex>

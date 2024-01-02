@@ -1,9 +1,8 @@
 import { Box,VStack,Image,Flex,Text } from "@chakra-ui/react"
 import { useState } from "react";
 import Login from "./Login";
-import SignUp from "./SignUp";
-import GoogleAuth from "./GoogleAuth";
-
+import SignUp from "./SignUp"
+import GoogleAuth from "./GoogleAuth"
 
 function AuthForm() {
 

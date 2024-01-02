@@ -6,13 +6,13 @@ import {getStorage} from "firebase/storage"
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC_TB94Usv4Yyt-Q4Fsum_sQkOXGhDA0WQ",
-  authDomain: "skill-flex-592b3.firebaseapp.com",
-  projectId: "skill-flex-592b3",
-  storageBucket: "skill-flex-592b3.appspot.com",
-  messagingSenderId: "590970417677",
-  appId: "1:590970417677:web:c200d0b68fdd653f6b5b44",
-  measurementId: "G-ZS2DCJT928"
+  apiKey: "AIzaSyBZ2Llea-x8DsChG9aoKIak4yWDYx0i1tA",
+  authDomain: "my-social-won.firebaseapp.com",
+  projectId: "my-social-won",
+  storageBucket: "my-social-won.appspot.com",
+  messagingSenderId: "277663959377",
+  appId: "1:277663959377:web:3ed2da930a3df811bd6b70",
+  measurementId: "G-68ZDNFEB85"
 };
 
 const app = initializeApp(firebaseConfig);
