@@ -23,7 +23,7 @@ const config = {
 }
 
 
-const theme = extendTheme({ config })
+const theme = extendTheme({ config,styles })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
